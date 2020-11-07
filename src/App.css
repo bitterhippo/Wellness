@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: white;
+  color: white;
+  border-bottom: 5px solid black;
+}
+
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+}
+
+.carousel {
+  width: 70%
+}
+
+#CarouselBox {
+  display: flex;
+}
