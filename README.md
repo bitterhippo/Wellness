@@ -1,4 +1,4 @@
-Current Dependencies:
+Dependencies:
 
 react-responsive-carousel
 
