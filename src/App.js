@@ -6,6 +6,17 @@ import Nav from './View/Nav';
 import Concerns from './View/Concerns';
 import Shop from './View/Shop';
 import Service from './View/Service';
+import Map from './Components/map/Map';
+import ConcernList from './Components/concerns/ConcernList';
+import Employees from './Components/employees/Employees';
+import Footer from './Components/footer/Footer';
+import OurStory from './Components/ourStory/ourStory';
+
+const location = {
+  address: '3905 Major MacKenzie Dr W Unit # 116, Vaughan, Ontario.',
+  lat: 43.856941,
+  lng: -79.505740,
+}
 
 function App() {
   return (
@@ -17,11 +28,14 @@ function App() {
       <Route path ='/shop' exact component={Shop} />
       <Route path ='/service' exact component={Service} />
       </Switch>
-  </div>
-
-
-
-    
+      <OurStory />
+      <div className='content'>
+        <ConcernList />
+        <Employees />
+      </div>
+      <Map location={location} zoomLevel={17} />
+      <Footer />
+    </div>
   </Router>
   );
 }

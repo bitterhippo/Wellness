@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <nav>
-      <img src="WellnessLogo.png" />
+      <a href='/'>
+        <img src="WellnessLogo.png" />
+      </a>
       <ul className="nav-links">
         <Link to="/concerns">
           <li>Health Concerns</li>

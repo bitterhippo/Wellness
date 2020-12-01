@@ -1,0 +1,39 @@
+.google-map {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 60vh;
+}
+
+.pin {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  color: var(--main-blue);
+}
+
+.pin-icon {
+  font-size: 4rem;
+}
+
+.pin-text {
+  font-size: 1.3em;
+}
+
+h1 {
+  margin: 0 3em 0.8em 2.5em;
+}
+
+@media screen and (min-width: 799px) {
+  .google-map {
+    height: 40vh;
+  }
+
+  .pin {
+    width: 10vw;
+  }
+
+  .pin-icon {
+    font-size: 10vw;
+    color: #6FBA2A;
+  }
+}

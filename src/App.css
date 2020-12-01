@@ -27,3 +27,7 @@ nav {
 #CarouselBox {
   display: flex;
 }
+
+.content {
+  margin: 0 0vw 0 5vw;
+}
