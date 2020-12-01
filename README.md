@@ -1,4 +1,5 @@
-Current Dependencies:
+Dependencies:
 
 react-responsive-carousel
+
 react-router-dom
