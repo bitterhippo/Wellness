@@ -26,7 +26,7 @@ li {
 
 .column1 {
   grid-column: 2;
-  margin-left: -8em;
+  margin-left: 0em;
 }
 
 .column2 {

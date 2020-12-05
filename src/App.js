@@ -10,7 +10,7 @@ import Map from './Components/map/Map';
 import ConcernList from './Components/concerns/ConcernList';
 import Employees from './Components/employees/Employees';
 import Footer from './Components/footer/Footer';
-import OurStory from './Components/ourStory/ourStory';
+import OurStuff from './Components/ourStuff/ourStuff';
 
 const location = {
   address: '3905 Major MacKenzie Dr W Unit # 116, Vaughan, Ontario.',
@@ -28,11 +28,9 @@ function App() {
       <Route path ='/shop' exact component={Shop} />
       <Route path ='/service' exact component={Service} />
       </Switch>
-      <OurStory />
-      <div className='content'>
-        <ConcernList />
-        <Employees />
-      </div>
+      <OurStuff />
+      <ConcernList />
+      <Employees />
       <Map location={location} zoomLevel={17} />
       <Footer />
     </div>

@@ -7,7 +7,6 @@ function Footer() {
       <div className='container'>
         <div className='row'>
           {/* column 1 */}
-          <img className='wellness-leaf' src='https://i.imgur.com/gSy0t8C.png' />
           <div className='column1'>
             <ul>
               <li className='first'>About</li>

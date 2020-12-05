@@ -1,0 +1,49 @@
+.our-title {
+  margin: 2em 0 1vh 3vw;
+}
+
+.our-story-title {
+  margin: 0 0 0.5vh 3vw;
+}
+
+.our-story-image {
+  width: 100%;
+}
+
+.our-story-text {
+  margin: 0 3vw 0 3vw;
+}
+
+.whole-staff {
+  display: flex;
+  margin: 0 0 0 3vw;
+}
+
+.staff {
+  margin: 0 2vw 0 0;
+}
+
+.our-staff-image {
+  max-width: 17vw;
+}
+
+.our-staff-text {
+  margin: 2em 0 1em 0;
+}
+
+.providers {
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.carousel {
+  height: 40em;
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+
+.legend {
+  position: absolute;
+  top: 46em;
+  background: none;
+}

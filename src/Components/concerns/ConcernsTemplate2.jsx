@@ -1,88 +1,101 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import styles from "./Concern.css";
 
-class App extends Component {
-  state = {
-    visible1: false,
-    visible2: false,
-    visible3: false,
-    visible4: false,
-    visible5: false,
-    visible6: false,
+const Concerns = () => {
+  const [title, setTitle] = useState("Neck Pain");
+
+  const [text, setText] = useState("big neck pain");
+
+  const [image, setImage] = useState(
+    "https://orthosportandspine.com/wp-content/uploads/2019/06/neck.jpg"
+  );
+
+  const setDefinition = (title, text, image) => {
+    setTitle(title);
+    setText(text);
+    setImage(image);
   };
 
-  render() {
-    return (
-      <div>
-        <div>
-          {this.state.visible1 ? <div className="concern-definition"><img className='definition-image' src='https://distasiofirm.com/wp-content/uploads/2019/12/neck-pain.jpg' /><br />This is neck pain</div> : null}
-          <button
-            className="ConcernButton"
-            onClick={() => {
-              this.setState({ visible1: !this.state.visible1 });
-            }}
-          >
-            Neck Pain
-          </button>
+  return (
+    <div>
+      <h1 className="our-title">{title}</h1>
+      <div className="concerns">
+        <div className="buttons">
+          <div>
+            <button
+              onClick={() =>
+                setDefinition(
+                  'Neck Pain',
+                  "big neck pain",
+                  "https://orthosportandspine.com/wp-content/uploads/2019/06/neck.jpg"
+                )
+              }
+              className="ConcernButton"
+            >
+              Neck Pain
+            </button>
+          </div>
+          <div>
+            <button 
+              onClick={() =>
+                setDefinition(
+                  'Shoulder Pain',
+                  "big shoulder pain",
+                  "https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/shoulder/shoulder-problem-hero.ashx?h=500&la=en&mh=500&mw=1300&w=1297&hash=0EA53365A7C73A93D52DDFA1A91B63850444C90D"
+                )
+              }            
+            className="ConcernButton">Shoulder Pain</button>
+          </div>
+          <div>
+            <button 
+              onClick={() =>
+                setDefinition(
+                  'Back Pain',
+                  "big back pain",
+                  "https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/back-pain-and-spine-conditions/lower-back-pain-hero.ashx?h=500&la=en&mh=500&mw=1300&w=1297&hash=D790A02BDED58F47D9D89BA9B15A85D468BBA072"
+                )
+              }  
+            className="ConcernButton">Back Pain</button>
+          </div>
+          <div>
+            <button 
+              onClick={() =>
+                setDefinition(
+                  'Hip & Pelvic Pain',
+                  "big hip pain",
+                  "https://www.nmortho.com/wp-content/uploads/2018/07/8-Causes-of-Hip-Pain-2.jpg"
+                )
+              }  
+            className="ConcernButton">Hip & Pelvic Pain</button>
+          </div>
+          <div>
+            <button 
+              onClick={() =>
+                setDefinition(
+                  'Knee Pain',
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, delectus? Maxime quia fugit perspiciatis hic labore similique explicabo quam, deleniti ea autem placeat. Voluptas fugit animi delectus, nulla enim aliquid?",
+                  "https://www.hopkinsmedicine.org/-/media/images/health/2_-treatment/orthopedics/knee-pain-hero.ashx?h=500&la=en&mh=500&mw=1300&w=1297&hash=99167111ABEDCC7276C74B2354888ED0AC25E13F"
+                )
+              } 
+            className="ConcernButton">Knee Pain</button>
+          </div>
+          <div>
+            <button 
+              onClick={() =>
+                setDefinition(
+                  'Foot & Ankle  Pain',
+                  "big feet pain",
+                  "https://grelotphysicaltherapy.com/wp-content/uploads/2019/06/foot-ankle-pain-0617-1280x500.jpg"
+                )
+              } 
+            className="ConcernButton">Foot & Ankle Pain</button>
+          </div>
         </div>
-        <div>
-          {this.state.visible2 ? <div className="concern-definition"><img className='definition-image' src='https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/bones-and-joints/shoulder-pain-teaser.ashxg' /><br />This is shoulder pain</div> : null}
-          <button
-            className="ConcernButton"
-            onClick={() => {
-              this.setState({ visible2: !this.state.visible2 });
-            }}
-          >
-            Shoulder Pain
-          </button>
-        </div>
-        <div>
-          {this.state.visible3 ? <div className="concern-definition"><img className='definition-image' src='https://www.azpainmd.com/images/low-back-pain-topic-new.jpg' /><br />This is back pain</div> : null}
-          <button
-            className="ConcernButton"
-            onClick={() => {
-              this.setState({ visible3: !this.state.visible3 });
-            }}
-          >
-            Back Pain
-          </button>
-        </div>
-        <div>
-          {this.state.visible4 ? <div className="concern-definition"><img className='definition-image' src='https://embed.widencdn.net/img/veritas/llrvoqqpor/576x324px/iStock-26466755-XXLARGE.jpeg?u=at8tiu&use=idsla&k=c' /><br />This is hip pain</div> : null}
-          <button
-            className="ConcernButton"
-            onClick={() => {
-              this.setState({ visible4: !this.state.visible4 });
-            }}
-          >
-            Hip & Pelvic Pain
-          </button>
-        </div>
-        <div>
-          {this.state.visible5 ? <div className="concern-definition"><img className='definition-image' src='https://www.medlife.com/blog/wp-content/uploads/2019/08/signs-of-knee-pain-1200x675.jpg' /><br />This is knee pain</div> : null}
-          <button
-            className="ConcernButton"
-            onClick={() => {
-              this.setState({ visible5: !this.state.visible5 });
-            }}
-          >
-            Knee Pain
-          </button>
-        </div>
-        <div>
-          {this.state.visible6 ? <div className="concern-definition"><img className='definition-image' src='https://cdn.novusspinecenter.com/wp-content/uploads/2017/10/foot-pain_1200x1200.jpg' /><br />This is foot pain</div> : null}
-          <button
-            className="ConcernButton"
-            onClick={() => {
-              this.setState({ visible6: !this.state.visible6 });
-            }}
-          >
-            Foot & Ankle Pain
-          </button>
-        </div>
+        <img id="definition-image" src={image} />
+        <p id="definition-text">{text}</p>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-export default App;
+export default Concerns;

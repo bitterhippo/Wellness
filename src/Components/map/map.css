@@ -19,10 +19,6 @@
   font-size: 1.3em;
 }
 
-h1 {
-  margin: 0 3em 0.8em 2.5em;
-}
-
 @media screen and (min-width: 799px) {
   .google-map {
     height: 40vh;
