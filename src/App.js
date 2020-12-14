@@ -7,7 +7,6 @@ import Concerns from './View/Concerns';
 import Shop from './View/Shop';
 import Service from './View/Service';
 import Map from './Components/map/Map';
-import ConcernList from './Components/concerns/ConcernList';
 import Employees from './Components/employees/Employees';
 import Footer from './Components/footer/Footer';
 import OurStuff from './Components/ourStuff/ourStuff';
@@ -29,7 +28,6 @@ function App() {
       <Route path ='/service' exact component={Service} />
       </Switch>
       <OurStuff />
-      <ConcernList />
       <Employees />
       <Map location={location} zoomLevel={17} />
       <Footer />

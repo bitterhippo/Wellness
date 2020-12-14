@@ -1,10 +1,10 @@
 import React from 'react';
-import ConcernsTemplate2 from './ConcernsTemplate2';
+import ConcernsTemplate from './ConcernsTemplate';
 
 function ConcernList() {
   return(
     <div>
-      <ConcernsTemplate2 />
+      <ConcernsTemplate />
     </div>
   )
 }

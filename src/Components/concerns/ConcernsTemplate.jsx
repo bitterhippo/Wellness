@@ -18,7 +18,7 @@ const Concerns = () => {
 
   return (
     <div>
-      <h1 className="our-title">{title}</h1>
+      <h1 className="concern-title">{title}</h1>
       <div className="concerns">
         <div className="buttons">
           <div>
