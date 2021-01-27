@@ -18,6 +18,8 @@ const location = {
   lng: -79.505740,
 }
 
+//<Map location={location} zoomLevel={17} />
+
 function App() {
   return (
   <Router>
@@ -33,7 +35,6 @@ function App() {
         <ConcernList />
         <Employees />
       </div>
-      <Map location={location} zoomLevel={17} />
       <Footer />
     </div>
   </Router>
